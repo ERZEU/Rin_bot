@@ -5,8 +5,8 @@ token = open('C:/Secret/token_Rin_bot.txt','r')
 
 bot = telebot.TeleBot(token.read())
 calendar = []
-id_Dev = 481892408
-id_Kara = 366447369 #tg-Карина
+id_Dev = open('C:/Secret/id_Dev.txt','r')
+id_Admin = open('C:/Secret/id_Admin.txt','r')
 
 @bot.message_handler(commands=['start'])
 def start(message):
